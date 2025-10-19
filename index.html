@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS || ToDo App</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="app">
+    <section class="contentArea">
+        <header>
+            <h1>{{baslik}}</h1>
+        </header>
+
+        <div class="inputArea">
+        <input type="text" v-model.trim="item" @keyup.enter="addItem" placeholder="lütfen planınızı girin..">
+        <button @click="addItem()">Ekle</button>
+        </div>
+
+        <p class="uyari" v-if="items.length === 0">Hiçbir Plan yapmadınız!</p>
+        <ul>
+            <li v-for="(it,i) in items" :key="i">{{it}}
+            <button class="deleteBtn" @click="deleteItem(i)" >Sil</button>
+            </li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

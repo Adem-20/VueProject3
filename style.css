@@ -1,0 +1,72 @@
+.contentArea {
+    background: beige;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    margin: 20px auto;
+    text-align: center;
+    width: max-content;
+    padding: 32px 41px 120px;
+    border-radius: 20px;
+}
+.inputArea {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.inputArea input {
+    width: 260px;
+    height: 30px;
+    border: 2px solid saddlebrown;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.inputArea button {
+    border-radius: 10px;
+    background: limegreen;
+    width: 120px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.uyari {
+    background: darkred;
+    color: white;
+    width: max-content;
+    text-align: center;
+    margin: 12px auto;
+    padding: 12px;
+    border-radius: 10px;
+    letter-spacing: 0.02em;
+}
+
+.contentArea ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contentArea li {
+    border-style: outset;
+    width: max-content;
+    margin: 12px auto;
+    padding: 8px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.deleteBtn {
+    border-radius: 10px;
+    padding: 6px 12px;
+    background: darkred;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
