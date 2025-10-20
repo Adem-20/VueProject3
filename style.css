@@ -70,3 +70,18 @@
     letter-spacing: 0.03em;
 }
 
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px 12px;
+    margin-top: 24px;
+}
+
+.actions button {
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: bottom;
+    color: mediumseagreen;
+    font-weight: 800;
+}

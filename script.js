@@ -4,6 +4,7 @@ const app = Vue.createApp ({
             baslik: 'Basic ToDo App', 
             items:[],
             item: '',   
+            listShow: true,
         };
     },
     methods: {

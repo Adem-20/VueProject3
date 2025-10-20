@@ -19,9 +19,13 @@
         </div>
 
         <p class="uyari" v-if="items.length === 0">Hiçbir Plan yapmadınız!</p>
-        <ul>
+        <div class="actions">
+        <button @click="listShow = true ">Göster</button>
+        <button @click="listShow = false ">Gizle</button>
+        </div>
+        <ul v-show="listShow">
             <li v-for="(it,i) in items" :key="i">{{it}}
-            <button class="deleteBtn" @click="deleteItem(i)" >Sil</button>
+            <button class="deleteBtn" @click="deleteItem(i)">Sil</button>
             </li>
         </ul>
     </section>
